@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nickname : "/>
+        <EditText
+            android:id="@+id/nicknameEditTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="nickname"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioManBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="man"/>
+            <RadioButton
+                android:id="@+id/radioWomanBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="woman"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="comment"/>
+        <EditText
+            android:id="@+id/commentEditTxt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="hi!"/>
+
+
+    <Button
+        android:id="@+id/saveProfileBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveProfileBtnOnClick"
+        android:text="save"/>
+</LinearLayout>
